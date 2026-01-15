@@ -23,7 +23,7 @@
         <ChartComponent/>
     </div>
     <div>
-        <h4 class="header" on:dblclick={handleGet}>日出日落预测</h4>
+        <h4 class="header" >日出日落<span on:dblclick={handleGet}>预</span>测</h4>
         {#if sunriseUrl}
         <div class="sunrise">
             <Sunrise apiUrl={sunriseUrl}/>
@@ -54,6 +54,7 @@
     }
 
     .header {
+        user-select: none;
         text-align: center;
     }
 </style>
