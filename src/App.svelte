@@ -3,7 +3,7 @@
     import DateReminder from "./DateReminder.svelte";
     import ChartComponent from './ChartComponent.svelte';
     import Sunrise from "./Sunrise.svelte";
-    // import Map from "./Map.svelte";
+    import Map from "./Map.svelte";
 
     let sunriseUrl , sunsetUrl;
 
@@ -14,7 +14,7 @@
 </script>
 
 <main >
-<!--    <Map/>-->
+    <Map/>
     <div class="wrap">
         <DateCalculator/>
         <DateReminder/>
